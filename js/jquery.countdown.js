@@ -118,7 +118,7 @@
       this.settings.diff = this.settings.diff - this.settings.refresh/1000;
 
       for (var i0 = 0, l0 = dash.length; i0 < l0; i0++) {
-        var $digit = $('.' + dash[i0].key + '_dash .digit');
+        var $digit = $element.find('.' + dash[i0].key + '_dash .digit');
         var n = dateData[dash[i0].key];
         for (var i = $digit.length - 1; i >= 0; i--) {
             var d = n % 10;

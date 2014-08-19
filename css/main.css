@@ -47,6 +47,7 @@ h2.subtitle {
   font-family: Times;
   color: #555;
   position: relative;
+  line-height: 1.2;
 }
 
 .dash_title {
