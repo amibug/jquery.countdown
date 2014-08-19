@@ -6,7 +6,7 @@ $('.countdown_dashboard')
     day: 1,
     hour: 0,
     min: 10,
-    sec: 1,
+    sec: 1
   }).end()
   .eq(2).countdown({
     diff: 20,
