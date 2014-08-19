@@ -11,9 +11,7 @@
       min: 1,
       sec: 1,
       refresh: 1000,
-
       easing: 'linear',
-
       dash: [
         {key: 'year', duration: 1100},
         {key: 'day', duration: 1100},
@@ -111,7 +109,7 @@
         dateData = this._caluate(this.settings),
         that = this;
 
-      if(this.settings.diff === 0){
+      if(this.settings.diff < 0){
         this.stop();
         this.settings.onEnd.apply(this);
         return this;

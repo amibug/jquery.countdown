@@ -78,7 +78,10 @@
     }, 4000);
     setTimeout(function() {
       $('#countdown_dashboard').data('countdown').update({
-        diff: 200
+        diff: 10,
+        onEnd: function(){
+          alert('onEnd')
+        }
       });
     }, 8000);
   </script>
