@@ -21,11 +21,11 @@
       refresh: 1000,
       easing: 'linear',
       dash: [
-        {key: 'year', duration: 1100},
-        {key: 'day', duration: 1100},
-        {key: 'hour', duration: 1100},
-        {key: 'min', duration: 1100},
-        {key: 'sec', duration: 800}
+        {key: 'year', duration: 950},
+        {key: 'day', duration: 950},
+        {key: 'hour', duration: 950},
+        {key: 'min', duration: 950},
+        {key: 'sec', duration: 750}
       ],
 
       // you may provide callback capabilities
@@ -147,7 +147,7 @@
         $bottom = $(digit).find('.bottom');
       n = n || 0;
       if (!duration) {
-        duration = 800;
+        duration = 750;
       }
       if ($top.html() != n + '') {
         $top.css({'display': 'none'})
