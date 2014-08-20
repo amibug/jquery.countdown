@@ -1,3 +1,11 @@
+/*
+ * jquery.countdown
+ * 
+ *
+ * Copyright (c) 2014 amibug
+ * Licensed under the MIT license.
+ */
+
 (function ($) {
   $.countdown = function (element, options) {
     // plugin's default options
@@ -25,7 +33,7 @@
     };
 
     var plugin = this;
-    plugin.settings = {}
+    plugin.settings = {};
 
     var $element = $(element), // reference to the jQuery version of DOM element
       element = element; // reference to the actual DOM element
@@ -79,7 +87,7 @@
           now = new Date();
           diff = Math.floor((target.valueOf() - now.valueOf()) / 1000);
         } catch (e) {
-          throw new Exception('The date parameter is invalidate!');
+          throw 'The date parameter is invalidate!';
         }
       }
       this.settings.diff = diff;
@@ -121,8 +129,8 @@
         var $digit = $element.find('.' + dash[i0].key + '_dash .digit');
         var n = dateData[dash[i0].key];
         for (var i = $digit.length - 1; i >= 0; i--) {
-            var d = n % 10;
-            n = (n - d) / 10;
+          var d = n % 10;
+          n = (n - d) / 10;
           this._render($digit.eq(i), d, dash[i0].duration);
         }
       }
@@ -168,5 +176,5 @@
         $(this).data('countdown', plugin);
       }
     });
-  }
+  };
 })(jQuery, window, undefined);
