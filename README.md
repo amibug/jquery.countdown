@@ -6,8 +6,8 @@ The best jQuery plugin ever.
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/amibug/jquery-countdown/master/dist/jquery.countdown.min.js
-[max]: https://raw.github.com/amibug/jquery-countdown/master/dist/jquery.countdown.js
+[min]: https://raw.github.com/amibug/jquery.countdown/master/dist/jquery.countdown.min.js
+[max]: https://raw.github.com/amibug/jquery.countdown/master/dist/jquery.countdown.js
 
 In your web page:
 
