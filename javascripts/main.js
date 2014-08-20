@@ -1,17 +1,28 @@
-$('.countdown_dashboard')
-  .eq(0).countdown().end()
-  .eq(1).countdown({
-    year: 0,
-    month: 0,
-    day: 1,
-    hour: 0,
-    min: 10,
-    sec: 1
-  }).end()
-  .eq(2).countdown({
-    diff: 20,
-    onEnd: function () {
-      alert('End')
+$('.countdown_dashboard').countdown();
+$('.stop').on('click', function(e){
+  e.preventDefault();
+  $('.countdown_dashboard').data('countdown').stop();
+})
+$('.start').on('click', function(e){
+  e.preventDefault();
+  $('.countdown_dashboard').data('countdown').start();
+});
+$('.update').on('click', function(e){
+  e.preventDefault();
+  $('.countdown_dashboard').data('countdown').update({
+    diff: 3000
+  });
+});
+$('.end').on('click', function(e){
+  e.preventDefault();
+  $('.countdown_dashboard').data('countdown').update({
+    diff: 5,
+    onEnd: function(){
+      $('.countdown_dashboard').css('background', '#c0392b');
     }
-  }).end();
+  });
+});
+
+
+
 
